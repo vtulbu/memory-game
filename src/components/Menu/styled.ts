@@ -52,6 +52,8 @@ export const BoxItem = styled(ChakraBox)(({ theme }) => ({
   ":active": {
     transform: "scale(0.9)",
   },
+
+  WebkitTapHighlightColor: "transparent",
 }));
 
 export const BoxMenu = styled(ChakraBox)(({ theme }) => ({

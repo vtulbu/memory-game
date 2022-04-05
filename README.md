@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Deployed on Vercel: [Vercel]()
+- Deployed on Vercel: [Vercel](https://memory-game-beta-eight.vercel.app/)
 
 ## My process
 
