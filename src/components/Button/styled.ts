@@ -15,7 +15,7 @@ export const Button = styled(ChakraButton)<Props>(
       : theme.colors.pickledBluewood[700],
     fontSize: "18px",
     fontWeight: "700",
-    padding: "25px 0",
+    padding: "25px",
     transition: "background-color 200ms cubic-bezier(0.4, 0, 0.49, 1)",
 
     ":hover": {

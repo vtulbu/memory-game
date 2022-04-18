@@ -13,6 +13,7 @@ const GameBoard: FC = () => {
     setFinalGame,
     setScoreArr,
     numberOfPlayers,
+    restartGame,
     grid,
   } = GameParameters();
 
@@ -76,6 +77,7 @@ const GameBoard: FC = () => {
   };
 
   useEffect(() => {
+    restartGame && setFirstChoice(null);
     valuesArray.every((e) => e.matched === true) && setFinalGame(true);
     if (firstChoice && secondChoice) {
       if (firstChoice.value === secondChoice.value) {
@@ -135,7 +137,7 @@ const GameBoard: FC = () => {
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [firstChoice, secondChoice]);
+  }, [firstChoice, secondChoice, restartGame]);
 
   return (
     <S.Container largeboard={(grid === "6x6").toString()}>

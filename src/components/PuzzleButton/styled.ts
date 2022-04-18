@@ -13,6 +13,7 @@ export const PuzzleButton = styled("div")<Props>(({ theme, smallButton }) => ({
   display: "flex",
   justifyContent: "center",
   cursor: "pointer",
+  WebkitTapHighlightColor: "transparent",
 
   ":hover": {
     backgroundColor: theme.colors.pickledBluewood[600],
